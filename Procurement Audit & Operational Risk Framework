@@ -1,0 +1,26 @@
+Analyst: Maureen Mathias Ngaro
+Technical Tool: SQL Server
+Objective: To detect financial leakage, quantify undocumented operational risks, and evaluate supplier compliance.
+
+1. Financial Leakage & Cost Recovery
+The Goal: Identify if vendors are honoring negotiated contract rates.
+Discovery: Identified systemic "Price Creep" across multiple categories.
+Top Risk: Epsilon_Group (MRO Category) shows a total money leak of $238,652 over 39 orders.
+Audit Insight: The data shows that price differences per unit are not one-time errors; they are consistent across high-volume orders, suggesting a need for immediate contract renegotiation.
+
+2. Value at Risk (VaR): Documentation Gaps
+The Goal: Quantify the financial exposure caused by missing delivery timestamps.
+Discovery: A total of $4.9M in transactions lack verified delivery dates.
+Top Risk: Alpha_Inc represents the highest exposure with $1.4M in ‘Value at Risk’ and 24 missing delivery dates.
+Risk Correlation: There is a direct correlation between missing documentation and financial leakage. Alpha_Inc has the highest associated money leak ($131k) on the same orders missing dates, signalling a high probability of fraudulent activity or gross negligence.
+
+3. Supplier Reliability & Logistics (service level agreement Audit)
+The Goal: Measure lead times and quality standards.
+Logistics Insight: Average delivery times are consistent at 8-13 days. However, Delta_Logistics (MRO) has the longest lead time at 13 days, which may impact operational uptime.
+Quality Risk: Delta_Logistics is also the highest risk for quality, with 19,678 defective units delivered.
+Audit Action: Recommend a ‘Probationary Status’ for Delta_Logistics due to the combination of high defects and slow delivery.
+
+4. Compliance & Governance
+The Goal: Isolate vendors who bypass internal controls.
+Compliance Discovery: Delta_Logistics has the highest non-compliance count (67 "No" statuses).
+Trend Observation: Price volatility analysis shows significant spikes in Electronics (Alpha_Inc) between April and August, jumping from $36.56 to $100.27. This requires a market-comparison audit to ensure the price hike was justified.
